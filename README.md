@@ -13,14 +13,15 @@ https://www.ceneo.pl/84514582#tab=reviews
 ## Analysis of the structure of the webpage
 |Component|Selector|Variable|
 |---------|--------|--------|
-|opinion ID | id | |
-|author | class | |
-|recommendation | class | |
-|number of stars | element | |
-|content of opinion | element | |
-|list of adventages | class | |
-|list of disadventages | class | |
-|for how many helpful | class | |
-|for how many unhelpful | class | |
-|publishing date | id | |
-|purchase date | id | |
+|opinion | .js_product-review | opinion |
+|opinion ID | [data-entry-id] | opinion_id |
+|author | .user-post__author-name | author |
+|recommendation | .user-post__author-recomendation > em | recommendation |
+|number of stars | .user-post__score-count | stars |
+|content of opinion | .user.post__text | content |
+|list of adventages | .review-feature__item--positive | pros |
+|list of disadventages | .review-feature__item--negative | cons |
+|for how many helpful | .vote-yes[data-total-vote] | vote_yes |
+|for how many unhelpful | .vote-no[data-total-vote] | vote_no |
+|publishing date | .user-post__published > time:nth-child(1)[datetime] | published_at |
+|purchase date | .user-post__published > time:nth-child(2)[datetime] | purchased_at |
