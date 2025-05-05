@@ -176,3 +176,5 @@ cython_debug/
 # application
 opinions/
 cookie.json
+pie_chart/
+bar_chart/
